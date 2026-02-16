@@ -1,0 +1,48 @@
+Article Sharing assignment 
+Build a simple full-stack web application where users can register, log in, write short text articles, 
+and comment on each other’s articles. The focus is on basic functionality, security practices, 
+and clean code, not styling. An admin account should also exist to moderate content. 
+Pages / Features Required 
+Registration Page 
+This page allows new users to sign up and create an account in the system. It collects basic 
+details and ensures credentials are stored. 
+● Fields: username, email, password 
+● On success, redirect to the login page 
+Login Page 
+This page handles authentication and routes users based on their role (normal user or admin). 
+● Login with email + password 
+● Normal users → Homepage 
+● Admin → Homepage 
+Homepage 
+The homepage is the central hub of the application, displaying all articles along with their 
+comments directly underneath. 
+Functionality: 
+● Show all articles, sorted by newest first. 
+● Each article displays its title, body, author, and timestamp. 
+● All comments for each article appear directly below the article. 
+● Logged-in users can add comments beneath any article (comment has to have text - 
+timestamp). 
+● Admin users can delete articles or comments directly from the homepage.  
+● Users can delete their own articles or comments only. 
+New Article Page 
+This page is where users create and publish their own articles. It links each new article to the 
+current logged-in user. 
+● Logged-in users can create a new article 
+● Fields: title and body 
+● Save article with author ID 
+● Redirect back to login page 
+Logout 
+This functionality ensures sessions are properly closed and prevents unauthorized access after 
+a user signs out. 
+● Clears user session 
+● Redirects to homepage 
+Database 
+The database stores user credentials, articles, and comments, linking them together with 
+relationships. 
+Deliverables 
+At the end of the assignment, students should provide a working full-stack application along with 
+documentation. 
+● Working full-stack app (backend + frontend) 
+● read.me  with clear setup instructions (how to install and run locally) 
+● No advanced styling required (simple forms and pages are enough) 
+● Admin account must be included in the database. 
